@@ -1,0 +1,89 @@
+h1 {
+    color: red;
+}
+
+/* 2 - Sintaxe */
+@media screen and (max-width: 500px) {
+/* MAX-WIDTH = TELAS MENORES QUE ALGUMA RESOLUÇÃO */ 
+    h1 {
+        color: blue;
+    }
+}
+
+/* 3 - Outros Modos */
+/* Screen, Print, Speech, All */
+@media print and (max-width: 600px) {
+    h1 {
+        color: green;
+    }
+}
+
+/* 4 - Todos os Modos */
+@media (max-width: 700px) {
+    h2 {
+        color: blueviolet;
+    }
+}
+
+/* 5 - Mobile First (Desenvolve de telas menores p/maiores */
+/* Min-Width > Max-Width */
+@media (min-width: 200px) {
+    h2 {
+        color: teal;
+    }
+}
+
+/* 6 - AND na Media Query */
+@media (min-width: 300px) and (max-width: 400px) {
+    h3 {
+        font-size: 3em;
+    }
+}
+
+/* 7 - Orientation na Media Query */
+@media (orientation: landscape) {
+    h3 {
+        color: brown;
+    }
+}
+
+/* 8 - OR na Media Query */
+@media (max-width: 200px), (orientation: landscape) {
+    h3 {
+        font-size: 4em;
+    }    
+}
+
+/* 9 - Breakpoints na Media Query */
+h5 {
+    color: aqua;
+    font-size: 2em;
+}
+
+/* 480px > 768px = TABLET */
+@media (min-width: 480px) {
+    h5 {
+        color: burlywood;    
+    }
+}
+
+/* 768px > 1024px = TELAS MENORES E LAPTOPS */
+@media (min-width: 768px) {
+    h5 {
+        color: cadetblue;    
+    }
+}
+
+/* 1024px > 1200px = DESKTOP */
+@media (min-width: 1024px) {
+    h5 {
+        color: coral;    
+    }
+}
+
+/* 1200px e + > TELAS MAIORES E TVS */
+@media (min-width: 1200px) {
+    h5 {
+        color: darkorchid;    
+    }
+}
